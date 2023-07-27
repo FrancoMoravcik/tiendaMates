@@ -1,0 +1,23 @@
+.divCount {
+    border:1px solid #023047;
+    border-radius: 5px;
+}
+
+.btnCount {
+    width: 50px;
+    border: none;
+    background-color: #dc2f02;
+    border-radius: 3px;
+    color: white;
+}
+
+.btnCount:hover {
+    background-color: #be2600;
+}
+
+.pCount {
+    font-size: 20px;
+    margin-top: 15px;
+    width: 20px;
+    text-align: center;
+}

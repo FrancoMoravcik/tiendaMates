@@ -1,0 +1,22 @@
+.btnAgregarAlCarrito {
+    background-color: #dc2f02;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+.btnAgregarAlCarrito:hover {
+    background-color: #be2600;
+}
+
+.h3Detalle {
+   color: #023047;
+   margin: 25px;
+}
+
+.h3Mas {
+    margin-left: 30px;
+    text-decoration: underline;
+}

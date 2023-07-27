@@ -1,0 +1,18 @@
+.divFooter {
+    background-color: #dc2f02;
+    height: 40px;
+}
+
+.pFooter {
+    color: white;
+    margin: 0;
+}
+span a{
+text-decoration: underline;
+color: white;
+transition: all .4s;
+}
+
+span a:hover {
+    color: black;
+}
