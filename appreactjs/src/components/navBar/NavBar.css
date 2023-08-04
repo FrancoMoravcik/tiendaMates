@@ -21,7 +21,7 @@ header {
 
 ul {
     margin-right: 50px;
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,7 +34,7 @@ ul li {
 
 ul li a{
     text-decoration: none;
-    color: #9fa6ad;
+    color: #858b91e7;
     font-size: 16px;
     font-weight: 500;
     transition: all .4s;
@@ -43,5 +43,14 @@ ul li a{
 
 ul li a:hover{
     color: #023047;
+}
+
+.selected {
     border-bottom: 2px solid #023047;
+    color: #023047;
+}
+
+.imgCarrito {
+    width: 24px;
+    padding-right: 2px;
 }

@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Mate Uruguayo",
+      "category": "Mates",
+      "price": 5500,
+      "stock": 7,
+      "imagen": "./img/imgUru.jpeg",
+      "id": 1
+    },
+    {
+      "title": "Mate Imperial",
+      "category": "Mates",
+      "price": 7000,
+      "stock": 8,
+      "imagen": "./img/imgImperial.jpeg",
+      "id": 2
+    },
+    {
+      "title": "Mate Pampa",
+      "category": "Mates",
+      "price": 8000,
+      "stock": 3,
+      "imagen": "./img/imgPampa.jpeg",
+      "id": 3
+    },
+    {
+      "title": "Mate Imperial AFA",
+      "category": "Mates",
+      "price": 8200,
+      "stock": 6,
+      "imagen": "./img/imgAFA.webp",
+      "id": 4
+    },
+    {
+      "title": "Mate Aluminio Liso",
+      "category": "Mates",
+      "price": 3800,
+      "stock": 5,
+      "imagen": "./img/imgAlum.jpeg",
+      "id": 5
+    },
+    {
+      "title": "Termo Stanley",
+      "category": "Termos",
+      "price": 14000,
+      "stock": 4,
+      "imagen": "./img/imgStanley.png",
+      "id": 6
+    },
+    {
+      "title": "Termo Media Manija",
+      "category": "Termos",
+      "price": 5800,
+      "stock": 9,
+      "imagen": "./img/imgMediaManija.webp",
+      "id": 7
+    },
+    {
+      "title": "Canasta Simil Cuero",
+      "category": "Canastas",
+      "price": 1900,
+      "stock": 6,
+      "imagen": "./img/imgSimil.jpeg",
+      "id": 8
+    },
+    {
+      "title": "Canasta 100% Cuero",
+      "category": "Canastas",
+      "price": 6800,
+      "stock": 3,
+      "imagen": "./img/imgCuero.jpeg",
+      "id": 9
+    }
+  ]

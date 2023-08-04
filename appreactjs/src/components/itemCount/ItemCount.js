@@ -31,7 +31,7 @@ const ItemCount = (props)  => {
         if(contador > 0){
             setContador(contador - 1)      
         
-            props.cantidades(contador)
+            props.cantidades(contador - 1)
         }
     }
 

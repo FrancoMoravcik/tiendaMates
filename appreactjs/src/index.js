@@ -10,7 +10,7 @@ import Home from './components/home/Home.js'
 import NavBar from './components/navBar/NavBar.js';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
-import AboutUs from './components/aboutUs/AboutUs';
+import Cart from './components/cart/Cart';
 import Footer from './components/footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // WebVitals
@@ -32,7 +32,7 @@ root.render(
     <Route exact path='/home' element={<Home/>}/>
     <Route exact path='/productos' element={<ItemListContainer/>}></Route>
     <Route exact path='/producto/:productoId' element={<ItemDetailContainer/>}></Route>
-    <Route exact path='/nosotros' element={<AboutUs/>}></Route>
+    <Route exatc path='/carrito' element={<Cart></Cart>}></Route>
    </Routes>
 
  

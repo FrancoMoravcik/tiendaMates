@@ -1,0 +1,24 @@
+.divHome {
+    min-height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3Home{
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    width: 550px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #02304758;
+    transition: all .4s;
+}
+
+.h3Home:hover{
+    background-color: white;
+    color: #023047;
+    border: 1px solid #023047;
+}

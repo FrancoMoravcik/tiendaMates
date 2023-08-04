@@ -1,11 +1,16 @@
  /***** IMPORTACIONES *****/
 import "./Home.css"
 
+
+
 /***** LOGICA *****/
 
 const Home = ()  => {
+
 return (
-    <p>Home</p>
+     <div className="divHome">
+        <h3 className="h3Home">Proyecto React Js / Tienda E-commerce con funcionalidad carrito de compras</h3>
+     </div>
 )
 }
 

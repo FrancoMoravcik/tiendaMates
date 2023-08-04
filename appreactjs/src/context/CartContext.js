@@ -1,7 +1,9 @@
 // Use Context (Utilizar el contexto creado), createContext (crear el contexto de la aplicacion) => react
 
 import { useContext, createContext, useState, } from "react";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "./CartContext.css" 
 // 1° crear el contexto      Valor dentro del argumento de la funcion es el valor por default del contenido
 //2° Exportar el contexto creado 
 export const CartContext = createContext([])
@@ -20,37 +22,62 @@ const [items, setItems] = useState([])
 
  // Funciones del CartProvider 
 
- const addItem = (data) => {
-     if(validarProductoExistente(data.id)){
-         alert("El producto ya esta en el carrito")
-     }else {
-         const listaActual = items
-         listaActual.push (data)
-         setItems(listaActual)
-         console.log(listaActual)
-     }
+ const notifyAgregado = () => {
+  toast.success('Producto agregado al carrito', {
+    position: toast.POSITION.BOTTOM_RIGHT,
+    autoClose: 1200, 
+    className: 'mi-clase-toastify'
+  })
  }
 
-const borrarDelCarrito = (id) => {
-    const nuevaLista = items.filter(e => e.id !== id)
-setItems(nuevaLista) 
-}
+ const notifyBorrado = () => {
+  toast.success('Producto Borrado', {
+    position: toast.POSITION.BOTTOM_RIGHT,
+    autoClose: 1200, 
+    className: 'mi-clase-toastify'
+  })
+ }
+
+ const addItem = (data) => {
+  notifyAgregado()
+  const itemExistente = items.find((item) => item.id === data.id)
+
+  if(itemExistente){
+    const itemsActualizados = items.map((item) => 
+    item.id === data.id ? { ...item, count: item.count + 1 || (item.count * item.cantidad) + 1 } : item 
+       );
+       setItems(itemsActualizados)
+      }else{
+        const listaActual = items
+        listaActual.push (data)
+        setItems(listaActual)
+      }
+    }
+
+ const borrarDelCarrito = (id) => {
+  notifyBorrado()
+    const nuevaLista = items.map((item) => {
+      if (item.id === id) {
+        return {
+          ...item,
+          count: item.count > 1 ? item.count - 1 : 0,
+        };
+      }
+      return item;
+        });
+  
+    setItems(nuevaLista.filter((item) => item.count > 0));
+  };
 
 const limpiarCarrito = () => {
-   setItems ({})
+   setItems ([])
 }
 
-const validarProductoExistente = (id) => {
-    if(items.find(e => e.id === id)){
-        return true
-}else {
-    return false
-}
-}
  // Render del CartProvider
     return (
     <CartContext.Provider value={{items, addItem, borrarDelCarrito, limpiarCarrito}}>
         {children}
+        <ToastContainer/>
     </CartContext.Provider>
     )
 }

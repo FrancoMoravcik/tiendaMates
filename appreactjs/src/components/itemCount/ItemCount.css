@@ -1,18 +1,20 @@
 .divCount {
     border:1px solid #023047;
     border-radius: 5px;
+    width: 220px;
+    margin: 10px;
 }
 
 .btnCount {
     width: 50px;
     border: none;
-    background-color: #dc2f02;
+    background-color: #023047;
     border-radius: 3px;
     color: white;
 }
 
 .btnCount:hover {
-    background-color: #be2600;
+    background-color: #012335;
 }
 
 .pCount {

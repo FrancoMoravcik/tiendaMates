@@ -1,18 +1,60 @@
 
 .cardDiv {
-    width: 280px !important;
-    height: 250px !important;
+    width: 350px !important;
+    height: 550px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s;
+    border: 1px solid #02304759;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.cardDiv:hover {
+    border: 1px solid #023047;
+    cursor: pointer;
+} 
+
+.btnAgregar{
+    width: 220px;
+    background-color: #023047;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all .4s;
+    border: none;
+    margin: 2px;
 }
 
 .aLink1 {
+    width: 220px;
+    text-align: center;
     text-decoration: none;
     background-color: #023047;
     color: white;
     border-radius: 5px;
     padding: 5px;
     transition: all .4s;
+    margin: 2px;
 }
 
 .aLink1:hover {
    background-color: #012536;
+}
+
+.tituloItem {
+    color: #023047 !important;
+    text-align: center;
+    padding: 10px;
+}
+
+.textoItem {
+    color: #023047;
+    text-align: center;
+}
+
+.imgItem{
+    width: 250px !important;
+    height: 250px;
 }
